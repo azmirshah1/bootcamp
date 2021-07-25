@@ -14,6 +14,12 @@ contract MappingStructExample {
         
     }
     
+    function withdrawMoney(address payable _to, uint _amount) public {
+        require(balanceReceived[msg.sender] >=_amount, "not enought funds");
+        balanceReceived[msg.sender] -= _amount;
+        _to.transfer(_amount);
+    }
+    
     function withdrawAllMoney(address payable _to) public {
         
         uint balanceToSend =balanceReceived[msg.sender];
