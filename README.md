@@ -1,2 +1,2 @@
 # bootcamp
-This is my Ethereum Blockchain Developer Bootcamp with solidity practice sheet. 
+This is a lab exercise I did while participating in the Ethereum blockchain developer bootcamp with solidity. The instructor was Thomas Wiesner.
