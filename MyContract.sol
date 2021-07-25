@@ -38,4 +38,12 @@ contract WorkingWithVariables{
     function getBalanceOfAddress() public view returns(uint) {
         return myAddress.balance;
     }
+
+    string public myString = 'Hello World';
+
+    // Strings
+    function setMyString(string memory _myString) public {
+        myString = _myString;
+    }
+    
 }
